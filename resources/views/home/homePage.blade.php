@@ -1,0 +1,12 @@
+@include('layout.headerHome')
+@include('home.section_1')
+@include('home.section_3')
+@include('home.section_9')
+@include('home.section_4')
+{{-- @include('home.section_5') --}}
+@include('home.section_6')
+@include('home.section_2')
+@include('home.section_8')
+@include('home.section_10')
+@include('home.section_7')
+@include('layout.footerHome')
