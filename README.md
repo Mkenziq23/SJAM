@@ -5,7 +5,7 @@
 </p>
 <div style="text-align: center;">
 
-## Sistem Informasi Manajemen Tahfiz Qur'an
+## Sistem Informasi Manajemen Sjam Rumah Tahfidz
 
 
 </div>
@@ -22,31 +22,10 @@ yang dalam dalam lingkungan tahfiz qur'an, beberapa modul dasar seperti pendafta
 <li> Manajemen absensi</li>
 <li> Manajemen pengurus</li>
 <li> Manajemen pembayaran SPP</li>
-<li> Manajemen penggajian pengurus</li>
 <li> Manajemen data donasi</li>
 <li> Manajemen data pengeluaran</li>
 <li> Rekap cashflow (keuangan)</li>
 <li> Rekap absensi</li>
-
-
-<h4>Screenshoot</h4>
-
-- Home
-
-
-- Form pendaftaran
-
-
-- Bukti Pendaftaran
-
-
-- Dashboard 
-
-
-- Form pembayaran SPP 
-
-
-- Bukti pembayaran SPP
 
 
 <h4>Instalasi</h4>
@@ -57,7 +36,7 @@ yang dalam dalam lingkungan tahfiz qur'an, beberapa modul dasar seperti pendafta
 
 - Pastikan sudah menginstall git (untuk clone repository) & composer
 
-- Silahkan clone repository ini dengan perintah <pre>git clone https://github.com/haxorsprogramming/Website-Tahfiz-Al-Hafiz </pre>
+- Silahkan clone repository ini dengan perintah <pre>git clone https://github.com/Mkenziq23/SJAM-Rumah-Tahfidz.github.io.git </pre>
 
 - Lakukan instalasi dependency dengan perintah <pre>composer install</pre>
 
@@ -83,10 +62,3 @@ sudo chmod -R 775 /var/www/html/nama_project/storage
 sudo chmod o+w ./storage/ -R
 </pre>
 
-<h4>Informasi Tambahan</h4>
-
-- Aplikasi ini merupakan hibah dari komunitas Haxorsprogramming untuk salah satu Tahfiz Qur'an di kota medan
-
-- Aplikasi ini bisa digunakan untuk tahfiz qur'an lain & bebas untuk dikembangkan kembali
-
-- Jika ada pertanyaan seputar aplikasi ini, atau ingin memberikan donasi dapat mengirimkan email ke <code>alditha.forum@gmail.com</code>
