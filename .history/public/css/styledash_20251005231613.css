@@ -1,0 +1,44 @@
+
+/* ========================================
+   SideBar
+======================================== */
+.sidebar-menu li a.active {
+    background-color: #0984e3; /* biru */
+    color: white;
+    border-radius: 4px;
+}
+.sidebar-menu li a.active i {
+    color: white;
+}
+
+.card-statistic-hover {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-statistic-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.bg-gradient-primary { background: linear-gradient(135deg, #0984e3, #74b9ff); }
+.bg-gradient-danger { background: linear-gradient(135deg, #d63031, #ff7675); }
+.bg-gradient-warning { background: linear-gradient(135deg, #fdcb6e, #ffeaa7); }
+.bg-gradient-success { background: linear-gradient(135deg, #00b894, #55efc4); }
+
+
+    .hover-shadow:hover {
+        background-color: #f8f9fa;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+    .carousel-inner img {
+        max-height: 350px;
+        object-fit: cover;
+    }
