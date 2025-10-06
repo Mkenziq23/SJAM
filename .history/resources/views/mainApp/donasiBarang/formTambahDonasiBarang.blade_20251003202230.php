@@ -1,0 +1,64 @@
+<!-- div form add data donasi  -->
+<div id="divTambahDonasiBarang" style="display: none;">
+    <div>
+        <a href="javascript:void(0)" class="btn btn-primary btn-icon icon-left" @click="kembaliAtc()">
+            <i class="fas fa-reply"></i> Kembali
+        </a>
+    </div>
+    <div class="row  justify-content-center">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12 mt-3">
+            <div class="card card-primary shadow">
+                <div class="card-header">
+                    <h4 class="card-title">Form tambah Donasi Barang</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label>Nama Donatur</label>
+                        <input type="text" class="form-control" id="txtNamaDonatur" />
+                    </div>
+                    <div class="form-group">
+                        <label>Nama Barang</label>
+                        <textarea class="form-control" style="resize: none;" id="txtNamaBarang"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Tipe</label>
+                        <select class="form-control" id="txtTipe">
+                            <option value="PERSEORANGAN">Perseorangan</option>
+                            <option value="INSTANSI">Instansi / Perusahaan</option>
+                            <option value="UMKM">UMKM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Jumlah</label>
+                        <input type="text" class="form-control" id="txtJumlah" />
+                    </div>
+                    <div class="form-group">
+                        <label>Tanggal Donasi</label>
+                        <input type="date" class="form-control" id="txtTanggalDonasi" />
+                    </div>
+                    <div>
+                        <a href="javascript:void(0)" class="btn btn-lg btn-primary btn-icon icon-left"
+                            @click="prosesTambahDonasiBarangAtc()">
+                            <i class="fas fa-save"></i>Proses Tambah Donasi Barang
+                        </a>
+
+                        &nbsp;&nbsp;
+                        <a href="javascript:void(0)" class="btn btn-lg btn-info btn-icon icon-left" id="btnClearForm"
+                            @click="clearForm">
+                            <i class="fas fa-i-cursor"></i> Clear
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{-- <div class="col-lg-6 col-md-6 col-sm-6 col-12 mt-3">
+            <div class="card card-primary">
+                <div class="card-header"></div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div> --}}
+    </div>
+</div>

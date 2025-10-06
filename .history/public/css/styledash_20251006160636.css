@@ -1,0 +1,162 @@
+
+/* ========================================
+   SideBar
+======================================== */
+.sidebar-menu li a.active {
+    background-color: #0984e3; /* biru */
+    color: white;
+    border-radius: 4px;
+}
+.sidebar-menu li a.active i {
+    color: white;
+}
+
+.card-statistic-hover {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-statistic-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.bg-gradient-primary { background: linear-gradient(135deg, #0984e3, #74b9ff); }
+.bg-gradient-danger { background: linear-gradient(135deg, #d63031, #ff7675); }
+.bg-gradient-warning { background: linear-gradient(135deg, #fdcb6e, #ffeaa7); }
+.bg-gradient-success { background: linear-gradient(135deg, #00b894, #55efc4); }
+
+
+.hover-shadow:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.carousel-inner img {
+    max-height: 350px;
+    object-fit: cover;
+}
+
+/* ======Pembayaran Abasensi=====*/
+.card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.table thead th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.table tbody tr {
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f4f8ff;
+    transform: scale(1.01);
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.card-header h5 {
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .card-header h5 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+}
+
+
+/* ======Pembayaran Spp====
+/* Card Styling */
+.card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card-header {
+    border-bottom: none;
+    background: linear-gradient(135deg, #007bff, #00bfff);
+}
+
+/* Table Enhancements */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.table thead th {
+    vertical-align: middle;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.table tbody tr {
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f4f8ff;
+    transform: scale(1.01);
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+/* Button Hover */
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Badge Styling */
+.badge {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    border-radius: 12px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .card-header h5 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+}
+
