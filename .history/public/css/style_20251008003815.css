@@ -1,0 +1,872 @@
+/* ========================================
+   🎨 Warna Utama
+======================================== */
+:root {
+    --navbar-bg: linear-gradient(90deg, #004aad, #007bff);
+    --navbar-text: #ffffff;
+    --navbar-hover: rgba(255, 255, 255, 0.15);
+    --footer-bg: #004aad;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ========================================
+   🧭 Navbar
+======================================== */
+.navbar {
+    background: var(--navbar-bg);
+    transition: all 0.3s ease;
+    z-index: 1050;
+    padding: 0.8rem 1rem;
+}
+
+.navbar.scrolled {
+    background: #004aad;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.navbar-brand img {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+    border-color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: var(--navbar-text) !important;
+    font-weight: 500;
+    margin: 0 8px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--navbar-hover);
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 0.3s ease;
+    margin-top: 2px;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* ========================================
+   🍔 Tombol Hamburger
+======================================== */
+.navbar-dark .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ========================================
+   📱 Responsif Navbar
+======================================== */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background: var(--navbar-bg);
+        border-radius: 0 0 12px 12px;
+        padding: 10px 0;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+        display: block;
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+
+    .dropdown-menu {
+        text-align: center;
+        border: none;
+        background: rgba(0, 74, 173, 0.95);
+        border-radius: 0 0 12px 12px;
+    }
+
+    .dropdown-item {
+        color: #fff;
+        transition: background 0.3s ease;
+    }
+
+    .dropdown-item:hover {
+        background: var(--navbar-hover);
+        color: #fff;
+    }
+}
+
+/* ========================================
+   ✨ Variabel Warna Navbar
+======================================== */
+:root {
+    --navbar-bg: rgba(0, 74, 173, 0.85);
+    --navbar-text: #fff;
+    --navbar-hover: rgba(0, 74, 173, 0.95);
+}
+
+
+/* ========================================
+   🦶 Footer
+======================================== */
+.footer {
+    background: linear-gradient(135deg, #004aad, #007bff);
+    color: white;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.footer h5 {
+    font-size: 1.25rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer .social-icons a {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #ffd700; /* warna emas saat hover */
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer h5 {
+        font-size: 1.1rem;
+    }
+
+    .footer p {
+        font-size: 0.85rem;
+    }
+
+    .footer .social-icons a {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+}
+
+
+/* ========================================
+   ✨ Animasi
+======================================== */
+.animate__animated {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+/* ========================================
+   🌅 Hero Section
+======================================== */
+.hero-section {
+    position: relative;
+    width: 100vw; /* pastikan penuh lebar viewport */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: url("../ladun/neloz/images/hero-1-bg.png") center center / cover no-repeat;
+    min-height: 100vh; /* full screen tinggi */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 38px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(200deg, rgba(0, 10, 50, 0.895), rgba(0, 70, 150, 0.84));
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image {
+    border-width: 8px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 1rem;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Animasi lembut */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(2) { animation-delay: 0.4s; }
+.fade-in:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsif Hero */
+@media (max-width: 992px) {
+    .hero-section {
+        text-align: center;
+        background-position: top center;
+        padding: 100px 0 60px 0;
+     
+    }
+
+    .hero-image {
+        max-width: 380px;
+        border-width: 6px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-image {
+        max-width: 320px;
+        border-width: 4px;
+    }
+}
+
+
+/* ========================================
+   Kelas Section
+======================================== */
+
+.kelas-section {
+    position: relative;
+    width: 100vw; /* penuh lebar viewport */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 100vh; /* full screen tinggi */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+/* Card */
+.service-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.4s ease;
+}
+
+/* Hover efek card */
+.hover-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.service-box .service-icon i {
+    transition: all 0.4s ease;
+}
+
+.hover-card:hover .service-icon i {
+    transform: scale(1.2) rotate(-10deg);
+}
+
+/* Fade-in Animasi */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.1s; }
+.fade-in:nth-child(2) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.3s; }
+.fade-in:nth-child(4) { animation-delay: 0.4s; }
+.fade-in:nth-child(5) { animation-delay: 0.5s; }
+.fade-in:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Typography */
+.kelas-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.kelas-section .f-15 {
+    color: #666;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+    .service-box {
+        padding: 1.5rem;
+    }
+    .service-box .service-icon i {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* ========================================
+   Tentang Section
+======================================== */
+.tentang-section {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: visible;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #007bff, #004aad);
+    color: #fff;
+}
+
+/* Overlay transparan */
+.tentang-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Konten di atas overlay */
+.tentang-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Konten visi/misi */
+.tentang-section .bg-white {
+    background-color: #fff !important;
+    color: #000 !important;
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Animasi fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Org Chart Modern */
+.org-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.org-level {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.org-box {
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.org-box:hover {
+    transform: translateY(-5px);
+}
+.org-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Connector garis vertikal */
+.org-connector-vertical {
+    position: relative;
+    width: 2px;
+    height: 40px;
+    background-color: #dee2e6;
+    margin: 0 auto 20px auto;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+    .org-level {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .org-connector-vertical {
+        height: 30px;
+    }
+}
+
+
+
+/* ========================================
+   Kegiatan Section
+======================================== */
+.kegiatan-section {
+    position: relative;
+    width: 100vw; 
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+/* Card hover efek */
+.hover-card {
+    transition: all 0.4s ease;
+}
+.hover-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Zoom image hover */
+.hover-zoom {
+    transition: transform 0.4s ease;
+}
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/* Fade-in Animasi */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.1s; }
+.fade-in:nth-child(2) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.3s; }
+.fade-in:nth-child(4) { animation-delay: 0.4s; }
+.fade-in:nth-child(5) { animation-delay: 0.5s; }
+.fade-in:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Tombol lihat semua hover + panah animasi */
+.hover-btn {
+    position: relative;
+    transition: all 0.3s ease;
+}
+.hover-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.hover-btn i {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.hover-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Typography */
+.kegiatan-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.kegiatan-section .f-15 {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hover-card {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* ========================================
+   Penilaian Masyarakat (kartu lebih kecil)
+======================================== */
+.penilaian-section {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #007bff, #004aad);
+    color: #fff;
+    overflow: visible;
+    text-align: center;
+}
+
+/* Overlay */
+.penilaian-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.penilaian-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Kartu Penilaian */
+.penilaian-card {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    max-width: 250px;
+    margin-inline: auto;
+}
+
+.penilaian-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Avatar lebih kecil */
+.user-img {
+    width: 70px;
+    height: 170px;
+    object-fit: cover;        
+    border-radius: 50%;      
+    border: 3px solid #007bff;
+    margin-bottom: 0.5rem;
+    overflow: hidden;       
+}
+
+
+/* Nama & Ulasan */
+.penilaian-card h6 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.penilaian-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Batas 3 baris teks (agar ulasan tidak panjang) */
+.text-truncate-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.rating {
+    direction: rtl; /* agar klik dari kanan ke kiri seperti Gojek */
+    display: inline-flex;
+    gap: 5px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+/* Saat hover dan saat dipilih */
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ffcc00; /* warna kuning bintang */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .penilaian-card {
+        max-width: 200px;
+        padding: 1rem;
+    }
+
+    .user-img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Responsif */
+@media (max-width: 992px) {
+    .penilaian-section .col-lg-6 { text-align: center; }
+    .penilaian-section .owl-carousel .item { margin: 0 10px; }
+}
+
+
+
+
+
+/* ========================================
+    Donasi Section
+======================================== */
+.donasi-section {
+    position: relative;
+    width: 100vw; /* pastikan penuh lebar viewport */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 100vh; /* full screen tinggi */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.donasi-section .hero-title {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.donasi-section .carousel-inner img {
+    border-radius: 12px;
+    object-fit: cover;
+    height: 420px;
+}
+
+.donasi-section .btn {
+    transition: all 0.3s ease;
+}
+
+.donasi-section .btn:hover {
+    transform: scale(1.05);
+}
+
+/* Responsif Donasi */
+@media (max-width: 992px) {
+    .donasi-section .col-lg-6 {
+        text-align: center;
+    }
+
+    .donasi-section .carousel-inner img {
+        height: 300px !important;
+    }
+
+    .donasi-section .btn {
+        margin-top: 10px;
+    }
+}
+
+
+/* ========================================
+    Pembyaran Section
+======================================== */
+/* Pembayaran SPP Section */
+.pembayaran-section {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #007bff, #004aad); /* sama dengan Tentang Section */
+    color: #fff;
+    padding: 100px 0;
+}
+
+.pembayaran-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* overlay transparan */
+    z-index: 1;
+}
+
+.pembayaran-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.pembayaran-section .fade-in {
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.pembayaran-section .bg-white {
+    background-color: #fff !important; /* card putih */
+    color: #000 !important;
+}
+
+.pembayaran-section .btn {
+    border-radius: 50px;
+    padding: 0.6rem 1.5rem;
+}
+
+.pembayaran-section .btn:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.pembayaran-section .table {
+    margin-bottom: 1rem;
+}
+
+
+
+/* ========================================
+   Pendaftaran Section
+======================================== */
+.pembayaran-section {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.pendaftaran-section h2 {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.pendaftaran-section .text-muted {
+    color: #666;
+}
+
+.pendaftaran-section .form-control {
+    border-radius: 0.5rem;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid #ddd;
+    transition: all 0.3s;
+}
+
+.pendaftaran-section .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.2);
+}
+
+.pendaftaran-section .btn-primary {
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.pendaftaran-section .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
