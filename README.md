@@ -30,7 +30,7 @@ yang dalam dalam lingkungan tahfiz qur'an, beberapa modul dasar seperti pendafta
 
 <h4>Instalasi</h4>
 
-- Aplikasi dibuat dengan menggunakan laravel versi 8, untuk itu harap gunakan sistem kebutuhan sesuai dengan standar kebutuhan laravel 8
+- Aplikasi dibuat dengan menggunakan laravel versi 11, untuk itu harap gunakan sistem kebutuhan sesuai dengan standar kebutuhan laravel 8
 
 - Untuk database menggunakan MySql
 
